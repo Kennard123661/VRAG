@@ -1,0 +1,8 @@
+h5py
+tqdm
+scikit-video
+opencv-python
+tensorboard
+tensorboardX
+tqdm
+scikit-learn

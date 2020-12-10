@@ -1,0 +1,52 @@
+{
+  "max-epochs": 120,
+  "test-period": 10,
+  "train-batchsize": 1,
+  "test-batchsize": 1,
+  "max-train-nframes": 64,
+  "max-test-nframes": 2000,
+  "normalize-inputs": 0,
+  "embedding-similarity": "cosine",
+
+  "test": {
+    "EVVE": 1,
+    "FIVR5K": 1
+  },
+
+  "optimizer": {
+    "name": "adam",
+    "lr": 0.0000003,
+    "weight-decay": 0
+  },
+
+  "loss": {
+    "name": "triplet-cosine-margin",
+    "margin": 0.2
+  },
+
+  "network": {
+    "in-ndims": 3840,
+    "out-ndims": 4096,
+
+    "downsample": {
+      "activation": "elu"
+    },
+
+    "gnn": {
+      "name": "base-input-all",
+      "in-ndims": 512,
+      "base-ndims": 512,
+      "out-ndims": 512,
+
+      "kneighbors": 20,
+      "neighbor-aggregation": "weighted-sum",
+      "activation": "elu",
+
+      "similarity": {
+        "name": "attention",
+        "out-ndims": 512,
+        "bias": 0
+      }
+    }
+  }
+}
