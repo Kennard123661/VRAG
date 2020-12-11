@@ -157,6 +157,8 @@ and `fivr5k` are extracted before running the training script. We provide our pr
 
 ## Inference
 
+For inference, please extract the R-MAC features for the relevant datasets first.
+
 ### Video-level embeddings 
 
 Video-level embeddings can be generated using `src/scripts/create_video_embeddings.py`:
