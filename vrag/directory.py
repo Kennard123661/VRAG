@@ -26,6 +26,18 @@ elif node == 'deep-one':
     VCDB_DIR = os.path.join(DATASET_DIR, 'vcdb')
     VCDB_DISTRACTOR_DIR = os.path.join(DATASET_DIR, 'vcdb-distractors')
     TRAIN_DATA_DIR = os.path.join(DATASET_DIR, 'train-data')
+elif node == 'kennardng-desktop':
+    DATASET_DIR = '/mnt/BigData/project-storage/VRAG/datasets'
+    DATASET_DIR1 = '/mnt/Data/project-storage/VRAG/datasets'
+    PROJECT_DIR = '/home/kennardng/projects/VRAG'
+
+    CCWEB_DIR = os.path.join(DATASET_DIR, 'ccweb-video')
+    EVVE_DIR = os.path.join(DATASET_DIR1, 'evve')
+    FIVR5K_DIR = os.path.join(DATASET_DIR1, 'fivr5k')
+    FIVR200K_DIR = os.path.join(DATASET_DIR, 'fivr200k')
+    VCDB_DIR = os.path.join(DATASET_DIR, 'vcdb')
+    VCDB_DISTRACTOR_DIR = os.path.join(DATASET_DIR, 'vcdb-distractors')
+    TRAIN_DATA_DIR = os.path.join(DATASET_DIR, 'train-data')
 else:
     raise ValueError('ERR: no such node hostname')
 
