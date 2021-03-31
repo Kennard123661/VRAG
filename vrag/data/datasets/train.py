@@ -9,9 +9,9 @@ if __name__ == '__main__':
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     sys.path.insert(0, base_dir)
 
-import data.datasets.vcdb as vcdb_core
-import data.datasets.vcdb_distractors as vcdb_distractors
-from directory import TRAIN_DATA_DIR as DATASET_DIR
+import vrag.data.datasets.vcdb as vcdb_core
+import vrag.data.datasets.vcdb_distractors as vcdb_distractors
+from vrag.directory import TRAIN_DATA_DIR as DATASET_DIR
 
 VIDEO_INDEX_FILE = os.path.join(DATASET_DIR, 'video-index.pk')
 ANNOTATION_DIR = os.path.join(DATASET_DIR, 'annotations')

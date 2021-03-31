@@ -8,7 +8,7 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, SRC_DIR)
 
-import data.datasets.fivr5k as fivr5k
+import vrag.data.datasets.fivr5k as fivr5k
 
 
 def main():

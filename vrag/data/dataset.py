@@ -4,8 +4,8 @@ import torch
 import torch.utils.data as tdata
 import torch.nn.functional as F
 
-from data.datasets.train import get_epoch_normal_triplets, get_epoch_augment_triplets
-from utils.augment import temporal_augment_video
+from vrag.data.datasets.train import get_epoch_normal_triplets, get_epoch_augment_triplets
+from vrag.utils.augment import temporal_augment_video
 
 
 RMAC_LAYER_LENGTHS = np.array([256, 512, 1024, 2048])

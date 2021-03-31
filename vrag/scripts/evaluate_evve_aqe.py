@@ -12,7 +12,7 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, SRC_DIR)
 
-from directory import RESULT_DIR
+from vrag.directory import RESULT_DIR
 
 
 def _parse_arguments():

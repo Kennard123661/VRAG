@@ -14,8 +14,8 @@ if __name__ == '__main__':
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, root_dir)
 
-from data.video_loader import load_video
-from nets.rmac import RmacFeatureExtractor
+from vrag.data.video_loader import load_video
+from vrag.nets.rmac import RmacFeatureExtractor
 
 DATASETS_WITH_SUBFOLDERS = ['vcdb-distractors']
 

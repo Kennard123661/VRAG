@@ -7,8 +7,8 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     sys.path.insert(0, SRC_DIR)
 
-from data.datasets import sort_videos_by_similarity
-from directory import EVVE_DIR as DATASET_DIR
+from vrag.data.datasets import sort_videos_by_similarity
+from vrag.directory import EVVE_DIR as DATASET_DIR
 
 VIDEO_DIR = os.path.join(DATASET_DIR, 'videos')
 FRAME_FEATURE_DIR = os.path.join(DATASET_DIR, 'frame-features')

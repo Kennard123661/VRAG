@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 
 from PIL import Image
-from data.video_loader import load_video
+from vrag.data.video_loader import load_video
 
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 VISUALIZATION_DIR = os.path.join(PROJECT_DIR, 'visualization')

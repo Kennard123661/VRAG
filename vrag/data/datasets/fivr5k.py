@@ -3,8 +3,8 @@ import json
 import numpy as np
 from tqdm import tqdm
 
-from directory import FIVR5K_DIR as DATASET_DIR
-import data.datasets.fivr200k as fivr200k
+from vrag.directory import FIVR5K_DIR as DATASET_DIR
+import vrag.data.datasets.fivr200k as fivr200k
 
 VIDEO_DIR = os.path.join(DATASET_DIR, 'videos')
 FRAME_FEATURE_DIR = fivr200k.FRAME_FEATURE_DIR

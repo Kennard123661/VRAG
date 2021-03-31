@@ -8,7 +8,7 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     sys.path.insert(0, SRC_DIR)
 
-from directory import CCWEB_DIR as DATASET_DIR
+from vrag.directory import CCWEB_DIR as DATASET_DIR
 
 VIDEO_DIR = os.path.join(DATASET_DIR, 'videos')
 FRAME_FEATURE_DIR = os.path.join(DATASET_DIR, 'frame-features')

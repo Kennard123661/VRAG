@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from nets import BatchLinear
+from vrag.nets import BatchLinear
 
 
 class Vrag(nn.Module):

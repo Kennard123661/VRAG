@@ -18,12 +18,12 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, SRC_DIR)
 
-import data.datasets.evve as evve
-import data.datasets.fivr5k as fivr5k
-from nets.network import Vrag
-import nets.loss as network_losses
-from data.dataset import TrainDataset, TestDataset
-from directory import RESULT_DIR, CONFIG_DIR, CHECKPOINT_DIR, LOG_DIR
+import vrag.data.datasets.evve as evve
+import vrag.data.datasets.fivr5k as fivr5k
+from vrag.nets.network import Vrag
+import vrag.nets.loss as network_losses
+from vrag.data.dataset import TrainDataset, TestDataset
+from vrag.directory import RESULT_DIR, CONFIG_DIR, CHECKPOINT_DIR, LOG_DIR
 
 NUM_WORKERS = 3
 

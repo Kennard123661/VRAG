@@ -3,7 +3,7 @@ import numpy as np
 import os
 from tqdm import tqdm
 
-from directory import FIVR200K_DIR as DATASET_DIR
+from vrag.directory import FIVR200K_DIR as DATASET_DIR
 
 VIDEO_DIR = os.path.join(DATASET_DIR, 'videos')
 FRAME_FEATURE_DIR = os.path.join(DATASET_DIR, 'frame-features')

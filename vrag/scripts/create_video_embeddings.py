@@ -8,7 +8,7 @@ if __name__ == '__main__':
     SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, SRC_DIR)
 
-from scripts.train import VideoTrainer
+from vrag.scripts.train import VideoTrainer
 
 
 def _parse_arguments():
