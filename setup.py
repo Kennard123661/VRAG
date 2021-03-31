@@ -1,6 +1,6 @@
 import os
 from setuptools import setup, find_packages
-from vrag.directory import PROJECT_DIR
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 def read_requirements() -> list:

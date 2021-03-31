@@ -43,6 +43,7 @@ export VRAG_PATH_FIVR200K_DIR="mnt/BigData/video-retrieval-datasets/fivr200k"
 export VRAG_PATH_VCDB_DIR="/mnt/WD6/vcdb"
 export VRAG_PATH_VCDB_DISTRACTOR_DIR="/mnt/WD6/vcdb-distractors"
 export VRAG_PATH_TRAIN_DATA_DIR="/mnt/HGST6/video-retrieval-datasets/video-retrieval-train"
+export VRAG_PATH_CHECKPOINT_DIR='/mnt/BigData/projects/VRAG/checkoints'
 export VRAG_PATH_CONFIG_DIR='/mnt/BigData/projects/VRAG/configs'
 export VRAG_PATH_LOG_DIR='/mnt/BigData/projects/VRAG/logs'
 export VRAG_PATH_RESULT_DIR='/mnt/BigData/projects/VRAG/results'
