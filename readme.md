@@ -32,24 +32,17 @@ print(PROJECT_DIR)  # prints out the project directory
 
 ### Linking directories
 
-Add the paths to the project and to the datasets in `src/directory.py` e.g.:
+We will set paths using the environment variables, similar to the example below:
 
-```python
-if node == 'paul':
-    DATASET_DIR = '/mnt/BigData/video-retrieval-datasets'
-    DATASET_DIR1 = '/mnt/HGST6/video-retrieval-datasets'
-    PROJECT_DIR = '/mnt/BigData/projects/code/gcn'
-
-    CCWEB_DIR = os.path.join(DATASET_DIR, 'ccweb-video')
-    EVVE_DIR = os.path.join(DATASET_DIR1, 'evve')
-    FIVR5K_DIR = os.path.join(DATASET_DIR1, 'fivr200k')
-    FIVR200K_DIR = os.path.join(DATASET_DIR, 'fivr200k')
-    VCDB_DIR = os.path.join(DATASET_DIR, 'vcdb')
-elif node == '<hostname>':
-    DATASET_DIR = '<dataset-dir>'
-    ...
-else:
-    raise ValueError('ERR: no such node hostname')
+```bash
+export VRAG_PATH_PROJECT_DIR="/mnt/BigData/projects/VRAG"
+export VRAG_PATH_CCWEB_DIR="/mnt/BigData/video-retrieval-datasets/cc-web-video"
+export VRAG_PATH_EVVE_DIR="/mnt/HGST6/video-retrieval-datasets/evve"
+export VRAG_PATH_FIVR5K_DIR="mnt/HGST6/video-retrieval-datasets/fivr5k"
+export VRAG_PATH_FIVR200K_DIR="mnt/BigData/video-retrieval-datasets/fivr200k"
+export VRAG_PATH_VCDB_DIR="/mnt/WD6/vcdb"
+export VRAG_PATH_VCDB_DISTRACTOR_DIR="/mnt/WD6/vcdb-distractors"
+export VRAG_PATH_TRAIN_DATA_DIR="/mnt/HGST6/video-retrieval-datasets/video-retrieval-train"
 ```
 
 ### Dataset directory setup
