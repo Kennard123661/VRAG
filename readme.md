@@ -86,7 +86,7 @@ of the dataset contain the following:
     - videos.txt  # list of all videos
     - annotations.json  # shared with FIVR200K.
 ```
-We provide the auxiliary files, e.g. `db-videos.txt` [here](https://1drv.ms/t/s!ArD4s7M2GvOFwQeKShXJ4rsjwd68?e=IlS5zz).
+We provide the auxiliary files, e.g. `db-videos.txt` [here](https://1drv.ms/u/s!ArD4s7M2GvOFvxtNoXXGca79oHxb?e=74H581).
 
 #### VCDB
 In `src/directory.py`, set `VCDB_DIR` to point the root directory for the VCDB dataset. The initial structure 
