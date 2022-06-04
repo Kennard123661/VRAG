@@ -86,7 +86,7 @@ of the dataset contain the following:
     - videos.txt  # list of all videos
     - annotations.json  # shared with FIVR200K.
 ```
-We provide the auxiliary files, e.g. `db-videos.txt` [here](https://drive.google.com/drive/folders/1RFZweBRjGOsn2e1eNDolTK9orUUgNwev?usp=sharing).
+We provide the auxiliary files, e.g. `db-videos.txt` [here](https://1drv.ms/t/s!ArD4s7M2GvOFwQeKShXJ4rsjwd68?e=IlS5zz).
 
 #### VCDB
 In `src/directory.py`, set `VCDB_DIR` to point the root directory for the VCDB dataset. The initial structure 
@@ -118,8 +118,8 @@ cd src
 python scripts/extract_rmac_features.py --dataset evve --device 0
 ```
 where the dataset options are `['vcdb', 'vcdb-distractors', 'ccweb', 'evve', 'fivr5k', 'fivr200k']`. We also provide 
-extracted R-MAC features for [EVVE](https://drive.google.com/file/d/1nj9KQZ2PvyjqPvFgFILiy32seSgEBabA/view?usp=sharing) 
-and [FIVR-5K](https://drive.google.com/file/d/19ZdySIuGmQHDj7KgLBvtxYauXjqMuTEa/view?usp=sharing). Unzip the `rmac.zip` 
+extracted R-MAC features for [EVVE](https://1drv.ms/u/s!ArD4s7M2GvOFvwkvUhYTfSbdZO2E?e=C4Ps2W) 
+and [FIVR-5K](https://1drv.ms/u/s!ArD4s7M2GvOFvwoGK9NZ0sL54Uf0?e=9kUu7K). Unzip the `rmac.zip` 
 for the datasets and save them into `[EVVE_DATA_DIR]/frame-features/rmac` and `[FIVR200k-DATA-DIR]/frame-features/rmac` respectively.
 ## Training
 
@@ -139,7 +139,7 @@ training in `src/data/datasets/train.py`. The `TRAIN_DATA_DIR` in `src/directory
     - triplets.pk  # refer to http://ndd.iti.gr/visil/triplets.pk
     - video-index.pk  # created from running src/data/datasets/train.py
 ``` 
-We provide our auxiliary files for training [here](https://drive.google.com/drive/folders/1FF0fXpbHvLjCtJIw7xDMhcgtxChyXp99?usp=sharing).
+We provide our auxiliary files for training [here](https://1drv.ms/u/s!ArD4s7M2GvOFvwzMON1uiKkNPBe6?e=WKAwH3).
 
 
 ### Running training script
@@ -153,7 +153,7 @@ where `submission` refers to `configs/submission.json`. The checkpoints and logs
 `checkpoints/submission/` and `logs/submission/` respectively. In our training, we select the model with the best FIVR5K 
 DSVR mAP i.e. the model at epoch 110, `model-110`.  Ensure that the R-MAC features for `vcdb`, `vcdb-distractors`, `evve` 
 and `fivr5k` are extracted before running the training script. We provide our pre-trained model 
-[here](https://drive.google.com/drive/folders/1GLYFbySWlb1LkIveMNcpnjaMMkDOOdp6?usp=sharing). Save the pre-trained model as `checkpoints/submission/model-110.pt`
+[here](https://1drv.ms/u/s!ArD4s7M2GvOFwgPeae4sUFkBL_iM?e=PjYWAh). Save the pre-trained model as `checkpoints/submission/model-110.pt`
 
 ## Inference
 
