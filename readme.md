@@ -19,6 +19,17 @@ conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
 pip install -r requirements.txt
 ```
 
+#### Package installation 
+Alternatively, you can perform a package installation:
+```bash
+pip install VRAG/  # where VRAG is the root directory of the project.
+```
+Example usage as package:
+```python
+from vrag.directory import PROJECT_DIR
+print(PROJECT_DIR)  # prints out the project directory
+```
+
 ### Linking directories
 
 Add the paths to the project and to the datasets in `src/directory.py` e.g.:
